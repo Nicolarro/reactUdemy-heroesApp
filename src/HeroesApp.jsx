@@ -1,13 +1,13 @@
-import { Route, Routes} from "react-router-dom";
 import { AppRouter } from "./router/AppRouter";
+import { AuthProvider } from "./auth/context/AuthProvider";
 
 const HeroesApp = () => {
   return (
-<Routes>
-    <Route path="/*" element={<AppRouter/>}/>
-</Routes>
+<AuthProvider>
+    <AppRouter/>
+</AuthProvider>
 
   )
 }
 
-export default HeroesApp;
+export default HeroesApp; 

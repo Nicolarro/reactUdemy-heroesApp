@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 
@@ -10,8 +11,10 @@ export const HeroCard = ({
   characters,
 }) => {
   const heroImageUrl = `/assets/${id}.jpg`;
+
+
+
   return (
-    <>
       <div className="col">
         <div className="card">
           <div className="row no-gutters">
@@ -31,6 +34,5 @@ export const HeroCard = ({
           </div>
         </div>
       </div>
-    </>
   );
 };

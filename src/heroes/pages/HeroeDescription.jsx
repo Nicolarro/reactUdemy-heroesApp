@@ -8,10 +8,7 @@ const HeroeDescription = () => {
   console.log(heroe);
 
   return (
-    <>
       <h2>HeroeDescription</h2>
-      <p className="card-text">Probando</p>
-    </>
   );
 };
 

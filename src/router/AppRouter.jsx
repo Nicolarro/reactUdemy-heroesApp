@@ -8,18 +8,17 @@ import { Navbar } from "../../../../hooksApp/hooksApp/src/ui/components/Navbar";
 
 export const AppRouter = () => {
 
-
   return (
-        <>
-    <Navbar/>
-    <Routes>
-        <Route path="/marvel" element={<MarvelPage />}/>
-        <Route path="/dc" element={<DCPage />}/>
-        <Route path="/search" element={<SearchPage />}/>
-        <Route path="/hero/:id" element={<HeroPage />}/>
-        <Route path="/login" element={<LoginPage />}/>
-        <Route path="/*" element={<Navigate to="/marvel" />} />
-    </Routes>
+    <>
+      <Navbar/>
+      <Routes>
+          <Route path="/marvel" element={<MarvelPage />}/>
+          <Route path="/dc" element={<DCPage />}/>
+          <Route path="/search" element={<SearchPage />}/>
+          <Route path="/hero/:id" element={<HeroPage />}/>
+          <Route path="/login" element={<LoginPage />}/>
+          <Route path="/*" element={<Navigate to="/marvel" />} />
+      </Routes>
     </>
   )
 }
